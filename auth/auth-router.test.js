@@ -11,7 +11,7 @@ describe('server.js', () => {
     describe('auth endpoint', () => {
         describe('/login', () => {
             it('its working', async () => {
-                const res = await request(server).post('/api/auth/login', {username: '', password: ''});
+                const res = await request(server).post('/api/auth/login').send({username: '', password: ''});
                 expect(res.status).toBe(500)
             })
             it('you can log in', async () => {

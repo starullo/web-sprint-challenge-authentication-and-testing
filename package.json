@@ -4,6 +4,7 @@
   "description": "Authentication Sprint Challenge",
   "main": "index.js",
   "scripts": {
+    "test": "DB_ENV=testing jest --watch --verbose",
     "server": "nodemon index.js"
   },
   "repository": {
